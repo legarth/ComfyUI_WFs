@@ -1,0 +1,168 @@
+{
+  "id": "21cad83b-50a7-4289-9819-dc1b8f1aba26",
+  "revision": 0,
+  "last_node_id": 2,
+  "last_link_id": 2,
+  "nodes": [
+    {
+      "id": 1,
+      "type": "DLSS5Settings",
+      "pos": [
+        100,
+        130
+      ],
+      "size": [
+        304.56640625,
+        346
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "settings",
+          "type": "DLSS5_SETTINGS",
+          "links": [
+            2
+          ]
+        }
+      ],
+      "properties": {
+        "aux_id": "Blueforcer/ComfyUI-DLSS5-Enhancer",
+        "ver": "796ed5927a202ba50b5c929cd08e16b365041162",
+        "Node name for S&R": "DLSS5Settings",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "1x (DLAA / native)",
+        "Default",
+        "Cinematic",
+        0.8,
+        1,
+        1.4,
+        1,
+        true,
+        "M",
+        "auto",
+        0.24,
+        0,
+        ""
+      ],
+      "widgets_values_named": {
+        "upscaling_mode": "1x (DLAA / native)",
+        "nr_preset": "Default",
+        "nr_style": "Cinematic",
+        "nr_intensity": 0.8,
+        "local_tone_strength": 1,
+        "local_structure_strength": 1.4,
+        "skin_structure_strength": 1,
+        "automatic_mask": true,
+        "dlss_model_preset": "M",
+        "motion": "auto",
+        "scene_change_threshold": 0.24,
+        "warmup_frames": 0,
+        "runtime_dir": ""
+      }
+    },
+    {
+      "id": 2,
+      "type": "DLSS5EnhanceVideoFile",
+      "pos": [
+        504.56640625,
+        130
+      ],
+      "size": [
+        297.119140625,
+        270
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "settings",
+          "type": "DLSS5_SETTINGS",
+          "link": 2
+        }
+      ],
+      "outputs": [
+        {
+          "name": "video_path",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "name": "frames",
+          "type": "INT",
+          "links": null
+        }
+      ],
+      "properties": {
+        "aux_id": "Blueforcer/ComfyUI-DLSS5-Enhancer",
+        "ver": "796ed5927a202ba50b5c929cd08e16b365041162",
+        "Node name for S&R": "DLSS5EnhanceVideoFile",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "",
+        "H.264",
+        "MP4",
+        "Best",
+        "",
+        "dlss5",
+        0,
+        true,
+        true
+      ],
+      "widgets_values_named": {
+        "video_path": "",
+        "codec": "H.264",
+        "container": "MP4",
+        "quality": "Best",
+        "filename_prefix": "",
+        "output_directory": "dlss5",
+        "max_frames": 0,
+        "copy_audio": true,
+        "verify_neural_rendering": true
+      }
+    }
+  ],
+  "links": [
+    [
+      2,
+      1,
+      0,
+      2,
+      0,
+      "DLSS5_SETTINGS"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ue_links": [],
+    "links_added_by_ue": [],
+    "ds": {
+      "scale": 1.442099361064997,
+      "offset": [
+        379.7996159495979,
+        175.47698625222114
+      ]
+    },
+    "frontendVersion": "1.53.6",
+    "VHS_latentpreview": false,
+    "VHS_latentpreviewrate": 0,
+    "VHS_MetadataImage": true,
+    "VHS_KeepIntermediate": true
+  },
+  "version": 0.4
+}
